@@ -29,7 +29,7 @@
         if (empty($inputs["personal_address"])) $errors["personal_address"] = "Personal Address is required.";
         if (empty($inputs["sex"])) $errors["sex"] = "Sex is required.";
         if (empty($inputs["city"])) $errors["city"] = "City is required.";
-        if (empty($inputs["course"])) $errors["course"] = "Course is required.";
+        if (empty($inputs["course"])) $errors["course"] = "Course is required.";  
         if (empty($inputs["district"])) $errors["district"] = "District is required.";
         if (empty($inputs["state"])) $errors["state"] = "State is required.";
         if (empty($inputs["pincode"]) || !ctype_digit($inputs["pincode"]) || strlen($inputs["pincode"]) != 6) 
@@ -95,7 +95,7 @@
         <label for="state">State:</label>
         <input type="text" id="state" name="state" value="<?php echo $inputs['state']; ?>" required>
         <span style="color: red;"><?php echo $errors["state"] ?? ""; ?></span>
-        <br><br>
+        <br><br> 
 
         <label for="pincode">Pincode:</label>
         <input type="text" id="pincode" name="pincode" value="<?php echo $inputs['pincode']; ?>" required>
